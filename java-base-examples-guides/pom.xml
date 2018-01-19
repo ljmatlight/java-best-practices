@@ -14,7 +14,20 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <maven_compiler_plugin>3.5.1</maven_compiler_plugin>
         <jdk.version>1.8</jdk.version>
+
+        <junit.version>4.12</junit.version>
     </properties>
+
+    <dependencies>
+        <!-- junit start -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- junit end -->
+    </dependencies>
 
     <build>
         <pluginManagement>
