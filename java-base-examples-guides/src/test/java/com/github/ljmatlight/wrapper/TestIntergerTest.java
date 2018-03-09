@@ -1,22 +1,25 @@
 package com.github.ljmatlight.wrapper;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
  * Description：
- * <br /> Author：ljmatlight
+ * <br /> Author： galsang
  */
-public class TestIntergerTest {
+public class TestIntergerTest extends TestInterger {
+    @Test
+    public void testIntegerAndInt() throws Exception {
+        super.testIntegerAndInt();
+    }
 
     @Test
-    public void testInt() throws Exception {
+    public void testIntegerAndInteger() throws Exception {
+        super.testIntegerAndInteger();
+    }
 
-        Integer integerA = 2;
-        int intB = 2;
-
-        System.out.println("(integerA == intB) === " + TestInterger.testInt(integerA, intB)); // true
-//        Assert.assertTrue(TestInterger.testInt(integerA, intB));
+    @Test
+    public void testIntegerEqualsInteger() throws Exception {
+        super.testIntegerEqualsInteger();
     }
 
 }
