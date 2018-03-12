@@ -36,13 +36,19 @@ public class TestInterger {
     public void testIntegerEqualsEnumInteger() throws Exception {
 
         Integer integerA = 1;
-        System.out.println("integerA==EnumInteger.一.getStatus(): " + (integerA == EnumInteger.一.getStatus()));
+        Integer integerB = 2;
+        Integer integerC = 3;
 
+        System.out.println("integerA==EnumInteger.一.getStatus(): " + (integerA == EnumInteger.一.getStatus()));
+        System.out.println("integerB==EnumInteger.二.getStatus(): " + (integerB == EnumInteger.二.getStatus()));
+        System.out.println("integerC==EnumInteger.三.getStatus(): "
+                + (integerC == EnumInteger.三.getStatus().intValue()));
     }
 
     enum EnumInteger {
-        一("测试", 1); // true
-//        一("测试", new Integer(1)); // false
+        一("测试一", 1), // true
+        二("测试二", new Integer(2)), // false
+        三("测试三", new Integer(3)); // false
 
         private final String name;
         private final Integer status;
