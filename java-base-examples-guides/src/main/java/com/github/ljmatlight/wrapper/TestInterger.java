@@ -11,6 +11,7 @@ public class TestInterger {
         Integer integerA = 1;
         int intB = 1;
 
+        // true
         System.out.println("integerA == intB: " + (integerA == intB));
 
     }
@@ -20,6 +21,7 @@ public class TestInterger {
         Integer integerA = 1;
         Integer integerB = 1;
 
+        // true
         System.out.println("integerA == integerB: " + (integerA == integerB));
 
     }
@@ -29,6 +31,7 @@ public class TestInterger {
         Integer integerA = 1;
         Integer integerB = 1;
 
+        // true
         System.out.println("integerA.equals(integerB): " + (integerA.equals(integerB)));
 
     }
@@ -39,16 +42,21 @@ public class TestInterger {
         Integer integerB = 2;
         Integer integerC = 3;
 
+        // true
         System.out.println("integerA==EnumInteger.一.getStatus(): " + (integerA == EnumInteger.一.getStatus()));
+
+        // false
         System.out.println("integerB==EnumInteger.二.getStatus(): " + (integerB == EnumInteger.二.getStatus()));
+
+        // true
         System.out.println("integerC==EnumInteger.三.getStatus(): "
                 + (integerC == EnumInteger.三.getStatus().intValue()));
     }
 
     enum EnumInteger {
-        一("测试一", 1), // true
-        二("测试二", new Integer(2)), // false
-        三("测试三", new Integer(3)); // false
+        一("测试一", 1),
+        二("测试二", new Integer(2)),
+        三("测试三", new Integer(3));
 
         private final String name;
         private final Integer status;
