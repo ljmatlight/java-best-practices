@@ -22,4 +22,10 @@ public class TestIntergerTest extends TestInterger {
         super.testIntegerEqualsInteger();
     }
 
+    @Test
+    public void testIntegerEqualsEnumInteger() throws Exception {
+        super.testIntegerEqualsEnumInteger();
+    }
+
+
 }
