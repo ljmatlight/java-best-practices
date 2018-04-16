@@ -17,6 +17,7 @@
         <module>java-features-examples-guides</module>
         <module>java-net-examples-guides</module>
         <module>java-nio-examples-guides</module>
+        <module>alibaba-java-code-guidelines-in-action</module>
     </modules>
 
 </project>
