@@ -23,6 +23,10 @@ public class HashMapStructure {
         countryCapitalMap.put(france, "Paris");
         countryCapitalMap.put(russia, "Moscow");
 
+        //允许key 和 value 为 null
+        countryCapitalMap.put(russia, null);
+        countryCapitalMap.put(null, null);
+
         //put debug point at this line
         Iterator<Country> countryCapitalIter = countryCapitalMap.keySet().iterator();
         while (countryCapitalIter.hasNext()) {
