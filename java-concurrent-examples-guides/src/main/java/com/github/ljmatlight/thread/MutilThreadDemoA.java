@@ -16,6 +16,7 @@ public class MutilThreadDemoA {
 
         threadA.start();
         threadB.start();
+        System.out.println("运行结束！");
 
     }
 
